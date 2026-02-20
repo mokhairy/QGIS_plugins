@@ -1,0 +1,12 @@
+[general]
+name=Layer Date Filter
+qgisMinimumVersion=3.22
+description=Filter loaded vector layers by single date or date range and review matching attributes.
+version=0.1.0
+author=M. Khairy
+email=mokhairy@example.com
+about=Choose a loaded layer, detect date-like fields, then filter and display matching features for a selected date or date range.
+category=Vector
+icon=icon.svg
+experimental=False
+deprecated=False
