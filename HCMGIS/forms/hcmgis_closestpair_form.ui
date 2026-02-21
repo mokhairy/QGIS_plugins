@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hcmgis_closestpair_form</class>
+ <widget class="QDialog" name="hcmgis_closestpair_form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Closest/farthest pair of Points</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="LblInput">
+     <property name="text">
+      <string>Input Point Layer</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QgsMapLayerComboBox" name="CboInput">
+     <property name="showCrs">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="LblInput_2">
+     <property name="text">
+      <string>Unique Field</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QgsFieldComboBox" name="CboField"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="LblOutput">
+     <property name="text">
+      <string>Closest pair of Points</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QgsFileWidget" name="closest"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Farthest pair of Points</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QgsFileWidget" name="farthest"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="LblStatus">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="status">
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="BtnApplyClose">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFieldComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsfieldcombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsFileWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfilewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsMapLayerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsmaplayercombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BtnApplyClose</sender>
+   <signal>accepted()</signal>
+   <receiver>hcmgis_closestpair_form</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnApplyClose</sender>
+   <signal>rejected()</signal>
+   <receiver>hcmgis_closestpair_form</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/plugins/apc_plan">
+    <file>icons/hou_pdo_red_padded_dev.svg</file>
+  </qresource>
+</RCC>

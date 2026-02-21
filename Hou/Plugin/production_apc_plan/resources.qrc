@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/plugins/Production_APC_Plan">
+    <file>icons/hou_pdo_red_padded.svg</file>
+  </qresource>
+</RCC>

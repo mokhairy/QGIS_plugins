@@ -1,0 +1,37 @@
+[general]
+name=QGIS Plugin Templater GUI
+about=This plugin provides a graphical interface for the QGIS Plugin Templater project.
+category=None
+hasProcessingProvider=True
+description=This allows you to use the QGIS Plugin Templater with an interface rather than a command line. And therefore to create your plugin template easily.
+icon=resources/images/default_icon.png
+tags=plugin,plugins,template,builder
+
+# credits and contact
+author=Florent FOUGERES
+email=qgis@oslandia.com
+homepage=https://oslandia.gitlab.io/qgis/qgis-plugin-templater-gui/
+repository=https://gitlab.com/oslandia/qgis/qgis-plugin-templater-gui
+tracker=https://gitlab.com/oslandia/qgis/qgis-plugin-templater-gui/-/issues/
+
+# QGIS context
+deprecated=False
+experimental=True
+plugin_dependencies=qpip==1.1.1
+qgisMinimumVersion=3.40
+qgisMaximumVersion=4.99
+supportsQt6=True
+
+# versioning
+version=0.1.1
+changelog=
+ Version 0.1.0:
+ - First release
+ - Added processing to run QGIS Plugin Templater with all options. !2
+ – Handled cookiecutter dependency with qpip. !3
+ - Added a menu and toolbar action to open the processing UI. !4
+
+ Version 0.1.1:
+ - fix: use direct ZIP URL to avoid missing Git dependency error !8
+
+

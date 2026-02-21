@@ -1,0 +1,42 @@
+{
+  "project": {
+    "name": "Demo Seismic Campaign",
+    "location": "Rub' al Khali Basin",
+    "timezone": "Asia/Muscat",
+    "operator": "RCM Energy",
+    "description": "Synthetic dataset for validating the seismic production simulator"
+  },
+  "boundary": {
+    "name": "Block-Alpha",
+    "coordinates": [
+      [55.0000, 18.0000],
+      [55.3000, 18.0000],
+      [55.3000, 18.2500],
+      [55.0000, 18.2500],
+      [55.0000, 18.0000]
+    ],
+    "crs": "EPSG:4326"
+  },
+  "sources": [
+    {"source_id": "S-001", "name": "Base Camp", "longitude": 55.0500, "latitude": 18.0500, "nominal_shots_per_day": 60},
+    {"source_id": "S-002", "name": "Central Ridge", "longitude": 55.1500, "latitude": 18.1200, "nominal_shots_per_day": 55},
+    {"source_id": "S-003", "name": "North Line", "longitude": 55.2500, "latitude": 18.2000, "nominal_shots_per_day": 50}
+  ],
+  "receivers": [
+    {"receiver_id": "R-001", "line_id": "L01", "longitude": 55.0200, "latitude": 18.0600, "elevation_m": 120.0},
+    {"receiver_id": "R-002", "line_id": "L01", "longitude": 55.1200, "latitude": 18.0800, "elevation_m": 118.0},
+    {"receiver_id": "R-003", "line_id": "L02", "longitude": 55.2200, "latitude": 18.1500, "elevation_m": 122.0}
+  ],
+  "parameters": {
+    "daily_shot_target": 1200,
+    "daily_receiver_target": 900,
+    "crew_count": 3,
+    "hours_per_day": 12,
+    "shots_per_crew_hour": 42,
+    "receiver_capacity_per_crew": 320,
+    "weather_downtime_probability": 0.2,
+    "max_weather_delay_hours": 5,
+    "equipment_failure_rate": 0.08,
+    "ambient_noise_factor": 0.07
+  }
+}

@@ -1,0 +1,15 @@
+[general]
+name=RCM Production Progress
+qgisMinimumVersion=3.22
+author=RCM Planning Team
+email=rcm-team@example.com
+version=0.2.0
+description=Simulate and overlay daily seismic production progress on the active QGIS project map.
+about=Runs the RCM seismic production simulator, outputs daily shot events, and renders them on the active map for situational awareness.
+category=Analysis
+title=RCM Production Progress
+icon=icon.png
+alias=rcm_production_progress
+experimental=False
+default_locale=en
+tags=seismic,production,simulation,rcm

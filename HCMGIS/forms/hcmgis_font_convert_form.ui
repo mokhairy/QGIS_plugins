@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hcmgis_font_convert_form</class>
+ <widget class="QDialog" name="hcmgis_font_convert_form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>387</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Vietnamese Font Converter</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="LblInput">
+       <property name="text">
+        <string>Input Layer</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QgsMapLayerComboBox" name="CboInput">
+       <property name="showCrs" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QLabel" name="LblDestFont">
+       <property name="text">
+        <string>Target Charset</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QComboBox" name="CboOption">
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UPPER CASE (IN HOA)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>lower case (in thường)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Capitalize (Hoa đầu câu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Title (Hoa Mỗi Từ)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="3">
+      <widget class="QLabel" name="LblOption">
+       <property name="text">
+        <string>Options</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="3">
+      <widget class="QLabel" name="LblOutput">
+       <property name="text">
+        <string>Output</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0" colspan="3">
+      <widget class="QProgressBar" name="status">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QComboBox" name="CboDestFont">
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Unicode</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TCVN3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VNI-Windows</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ANSI (Khong dau)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="3">
+      <widget class="QLabel" name="LblStatus">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="LblSourceFont">
+       <property name="text">
+        <string>Source Charset</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QComboBox" name="CboSourceFont">
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TCVN3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Unicode</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VNI-Windows</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="3">
+      <widget class="QgsFileWidget" name="output_file_name" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="BtnApplyClose">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFileWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfilewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsMapLayerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsmaplayercombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BtnApplyClose</sender>
+   <signal>accepted()</signal>
+   <receiver>hcmgis_font_convert_form</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnApplyClose</sender>
+   <signal>rejected()</signal>
+   <receiver>hcmgis_font_convert_form</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

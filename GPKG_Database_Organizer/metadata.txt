@@ -1,0 +1,14 @@
+[general]
+name=GPKG Database Organizer
+qgisMinimumVersion=3.40
+qgisMaximumVersion=3.99
+description=Reorganizes GeoPackage feature layers by geometry type in the database without changing current project layer layout.
+version=0.1.0
+author=Mohamed KHAIRY
+email=mkhairy@londontrade.ca
+about=Creates an organized GeoPackage copy with feature layers written in grouped order (points, lines, polygons, others) and carries default styles when available.
+category=Database
+tags=geopackage,organize,geometry,style
+icon=icons/gpkg_db_organizer.svg
+experimental=False
+deprecated=False

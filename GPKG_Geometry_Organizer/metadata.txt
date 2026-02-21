@@ -1,0 +1,14 @@
+[general]
+name=GPKG Geometry Organizer
+qgisMinimumVersion=3.40
+qgisMaximumVersion=3.99
+description=Loads GeoPackage layers into Point/Line/Polygon groups and writes default geometry styles to layer_styles.
+version=0.1.0
+author=Mohamed KHAIRY
+email=mkhairy@londontrade.ca
+about=Organizes GeoPackage feature layers by geometry type in the layer tree and saves default point/line/polygon styles as default styles per layer in layer_styles.
+category=Database
+tags=geopackage,style,layer_styles,geometry,organize
+icon=icons/gpkg_organizer.svg
+experimental=False
+deprecated=False

@@ -1,0 +1,14 @@
+[general]
+name=Folder SHP to GPKG
+qgisMinimumVersion=3.40
+qgisMaximumVersion=3.99
+description=Load shapefiles from a selected folder, export them to one GeoPackage, then save project to GeoPackage.
+version=0.1.0
+author=Mohamed KHAIRY
+email=mkhairy@londontrade.ca
+about=Reads shapefiles from a chosen folder, adds them to the project, writes all layers into one GeoPackage, and opens a save dialog to store the project in a GeoPackage.
+category=Database
+tags=shapefile,geopackage,project,export
+icon=icons/folder_to_gpkg.svg
+experimental=False
+deprecated=False

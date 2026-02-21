@@ -1,0 +1,20 @@
+[general]
+name=KMZ Tools
+description=This plugin merges multiple vector layers into single kml and exports geotagged images layer into kmz with photos.
+version=1.0.0
+qgisMinimumVersion=3.0
+author=Nirmal Burlakoti
+email=snirmal33@yahoo.com
+about=
+    KMZ tools make it easy to combine multiple vector layers into single kmz file which can be easily opened in google earth or any other GIS software. It also allows to export individual shapefile into kmz including the image file attached in the records of the file. The directory of the image should be in any one field which can be included in the kmz along with the features.
+icon=logo.svg
+tracker=https://github.com/nirmalburlakoti/qgis-kmz-tools-plugin/issues
+repository=https://github.com/nirmalburlakoti/qgis-kmz-tools-plugin
+homepage=https://github.com/nirmalburlakoti/qgis-kmz-tools-plugin/#readme
+tags=kmz,google,google earth
+category=Plugins
+hasProcessingProvider=yes
+experimental=False
+deprecated=False
+changelog=
+    1.0.0 - Released first version

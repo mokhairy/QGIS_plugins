@@ -1,0 +1,17 @@
+[general]
+name=Seismic Project DB
+qgisMinimumVersion=3.40
+qgisMaximumVersion=3.99
+description=Packages current-project shapefiles into one GeoPackage and stores layer styles.
+version=0.1.0
+author=Mohamed KHAIRY
+email=mkhairy@londontrade.ca
+about=Creates one GeoPackage from all shapefile layers in the active project and saves styles.
+category=Database
+tags=geopackage,shapefile,style,export,packaging
+homepage=https://github.com/mokhairy/Seismic_Planning/
+tracker=https://github.com/mokhairy/Seismic_Planning/issues
+repository=https://github.com/mokhairy/Seismic_Planning/
+icon=icons/shp_to_gpkg.svg
+experimental=False
+deprecated=False

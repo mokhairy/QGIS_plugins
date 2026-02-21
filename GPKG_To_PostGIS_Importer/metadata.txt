@@ -1,0 +1,14 @@
+[general]
+name=GPKG to PostGIS Importer
+qgisMinimumVersion=3.40
+qgisMaximumVersion=3.99
+description=Imports GeoPackage layers or current project vector layers into a PostGIS database and optionally copies styles.
+version=0.2.0
+author=Mohamed KHAIRY
+email=mkhairy@londontrade.ca
+about=Batch import GeoPackage feature/attribute layers or currently loaded project vector layers into PostGIS schema with optional overwrite and style copy to layer_styles.
+category=Database
+tags=geopackage,postgis,postgres,import,style
+icon=icons/gpkg_to_postgis.svg
+experimental=False
+deprecated=False
